@@ -1,0 +1,106 @@
+body {
+    display: inline-block;
+    width: 970px;
+}
+
+.toolsearch {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.tool {
+    display: inline-block;
+}
+
+.ulnav {
+    height: 15px;
+    list-style-type: none;
+    list-style: none;
+}
+
+.inlinenow {
+    display: inline;
+}
+
+.container {
+    width: 970;
+    color: white;
+    display: inline-block;
+    background-color: #245076;
+}
+
+h3 {
+    color: #c8b242;
+}
+
+.navbar {
+    display: inline;
+    margin-left: 150px;
+    list-style-type: vertical;
+    display: inline-block;
+    text-align: center;
+    height: 50px;
+    width: 700px;
+    background: #437dad;
+}
+
+#pythonpic {
+    vertical-align: top;
+    max-width: 475px;
+    max-height: 250px;
+    display: inline-block;
+}
+
+#bottom {
+    display: inline-block;
+    width: 970px;
+    height: 300px;
+    vertical-align: top;
+}
+
+.bottombox {
+    vertical-align: top;
+    text-align: center;
+    width: 400px;
+    display: inline-block;
+}
+
+#right {
+    display: inline-block;
+    width: 450px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.bottombox2 {
+    margin-left: 75px;
+    text-align: center;
+    width: 400px;
+    display: inline-block;
+}
+
+.footer {
+    background-color: #26547c;
+    text-align: center;
+    width: 970px;
+    height: 100px;
+    vertical-align: center;
+    background: -webkit-linear-gradient(#3373aa, #26547c);
+}
+
+.bluetext {
+    color: #81afd9;
+}
+
+#ulone {
+    display: inline-block;
+}
+
+.left {
+    width: 400px;
+    display: inline-block;
+}
+
+#bodytop {
+    display: inline-block;
+}
