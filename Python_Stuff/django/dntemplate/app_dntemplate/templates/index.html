@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <title>D&N_W/Template</title>
+</head>
+<body>
+<form action="/create_dojo" method="POST">
+    {% csrf_token %}
+    <h2>Dojo enter status here...</h2>
+    <label for="dojo_name">Dojo Name</label>
+    <input type="text" id="dojo_name" name="dojo_name">
+    <br>
+    <label for="dojo_city">City</label>
+    <input type="text" id="dojo_city" name="dojo_city">
+    <br>
+    <label for="dojo_state">State</label>
+    <input type="text" id="dojo_state" name="dojo_state">
+    <br>
+    <button>Submit!</button>
+</form>
+<form action="/create_ninja" method="POST">
+    <h2>Ninja tell me your info...</h2>
+    {% csrf_token %}
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name">
+    <br>
+    <label for="last_Name">Last Name</label>
+    <input type="text" id="last_name" name="last_name">
+    <br>
+    <label for="dojo">Dojo</label>
+    <select name="dojo" id="dojo">
+            {% for dojo in dojos %}
+            <option value="{{dojo.id}}">{{dojo.dojo_name}}</option>
+            {% endfor %}
+        </select>
+    </p>
+    <button>Submit!</button>
+</form>
+<h1>Schools of Hardknocks and their Ninjas!</h1>
+<ul>
+    {% for dojo in dojos %}
+    <li>Ninjas at the {{dojo.dojo_name}}
+        <ul>
+            {% for ninja in dojo.ninjas.all %}
+            <ol class="maybe"><em>{{ninja.first_name}} {{ninja.last_name}}</em></ol>
+            {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+
+</html>

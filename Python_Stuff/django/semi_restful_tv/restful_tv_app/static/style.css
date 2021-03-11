@@ -1,0 +1,29 @@
+body {
+    display: inline-block;
+}
+
+div {
+    display: inline-block;
+}
+
+table {
+    padding-left: 40%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 970px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #86c237c4;
+}
+
+form {
+    display: inline-block;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+
+
+    <h2>Its the Great Number Game!</h2>
+
+
+    <h3>This number is between 1 and 100</h3>
+
+
+    <h4>What do you think it is?</h4>
+
+    <h1>{{returnText}}</h1>
+    <form action="/checkAnswer" method="POST">
+        {% csrf_token %}
+        <input type="int" name="guess" id="guess">
+        <button type="submit" value="submit">Bam</button>
+    </form>
+</body>
+
+</html>

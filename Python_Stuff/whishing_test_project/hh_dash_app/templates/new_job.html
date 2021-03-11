@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}" />
+    <title>New Trips</title>
+</head>
+
+<body>
+    <div>
+        <h1>Hello {{log_id.first_name}}! Create a Trip 3000!</h1>
+        <p><a href="/">Go Back</a></p><p><a href="/delete_session">Log Out</a></p>
+        <div>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %} 
+            <form action="/create_job" method="POST">
+                {% csrf_token %}
+                <div>
+                <p>Destination</p>
+                <input type="text" id="job_name" name="job_name" />
+                </div>
+                <br>
+                <p>Start Date</p>
+                <input type="date" id="start_date" name="start_date" />
+                <br>
+                <p>End Date</p>
+                <input type="date" id="end_date" name="end_date" />
+                </div>
+                <p>Plan</p>
+                <textarea name="location" rows="5" cols="30">What's this job all about?</textarea>
+                <button>Create!</button>
+            </form>
+        </div>
+</body>
+
+</html>

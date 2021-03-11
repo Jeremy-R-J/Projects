@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}" />
+    <title>'Holy Shnikees!'</title>
+</head>
+{% csrf_token %}
+
+<body>
+    <h1>You have successfully logged in {{log_id.first_name}} !! Plus I actually made it work!!</h1>
+    <p><a href="/delete_session">Log Out</a></p>
+</body>
+
+</html>

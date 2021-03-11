@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read(solo)</title>
+</head>
+{% csrf_token %}
+<H1>TV Show {{show.id}} </H1>
+<p><a href="/">Go Back</a></p>
+
+<p>Title : {{show.title}}</p>
+<br>
+<p>Network : {{show.network}}</p>
+<br>
+<p>Release Date : {{show.release_date}}</p>
+<br>
+<p>Description : {{show.desc}}</p>
+
+
+<div>
+    <a href="/edit_show/{{show.id}}">Edit</a>|
+    <a href="/delete/{{show.id}}">Delete This Show!</a>
+</div>
+
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div>
+        <form action="create_book" method="POST">
+            {% csrf_token %}
+            <h2>Library of Books</h2>
+            <p>Book Name</p>
+            <input type="text" id="book_name" name="book_name" />
+            <br />
+            <p>Book Description</p>
+            <br />
+            <textarea name="desc_book" rows="10" cols="30">Tell us about the book here?!</textarea>
+            <br/>
+            <button>Submit!</button>
+            <button>Reset!</button>
+        </form>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name of Title</th>
+                <th>action</th>
+            </tr>
+            <tr>
+                {% for book in books %}
+                <td>X-men</td>
+                <td>Powers of X</td>
+                <td href="/book_reader">link</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <td>Batman</td>
+                <td>Court of Owl's</td>
+                <td href="/book_reader">link</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

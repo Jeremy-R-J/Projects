@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!Crazy Amount Of Working Here!</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <h2>User Template</h2>
+    
+    <table id='container'>
+        <th>
+            <td class=boxes>First Name</td>
+            <td class='boxes'>Last Name</td>
+            <td class='boxes'>Age</td>
+            <td class='boxes'>Favorite Movies</td>
+        </th>
+        {% for user in all_users %}
+        <th>
+            <td class='boxes'>{{user.first_name}}</td>
+            <td class='boxes'>{{user.last_name}}</td>
+            <td class='boxes'>{{user.age}}</td>
+            <td class='boxes'>{{user.fav_movie}}</td>
+        </th>
+        {% endfor %}
+    </table>
+    <form action="/create " method="POST ">
+        {% csrf_token %}
+        <label for="first_name ">First Name</label>
+        <input type="text " name="first_name " id="first_name ">
+
+        <label for="last_name ">Last Name</label>
+        <input type="text " name="last_name " id="last_name ">
+
+        <label for="age ">How many candels burn on your cake?</label>
+        <input type="int " name="age " id="age ">
+
+        <label for="fav_movie ">What is your favorite movie?</label>
+        <input type="text " name="fav_movie " id="fav_movie ">
+
+        <button type="submit " name="add_user " id="add_user ">Press Here</button>
+    </form>
+
+
+
+</body>
+
+</html>

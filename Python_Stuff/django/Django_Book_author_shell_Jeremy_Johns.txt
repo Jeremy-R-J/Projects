@@ -1,0 +1,151 @@
+made classes then
+
+from writer_author_shell.models import *
+
+
+>> from writer_author_shell.models import *
+>>> Book.objects.create(title="X-men", desc= "about mutants")
+<Book: Book object (1)>
+>>> Book.objects.create(title="C Sharp", desc= "about sharp C's")
+<Book: Book object (2)>
+>>> Book.objects.create(title="Java", desc= "about coffee")
+<Book: Book object (3)>
+>>> Book.objects.create(title="Python", desc= "about snakes on a plane")
+<Book: Book object (4)>
+>>> Book.objects.create(title="PHP", desc= "about Baseball and steroids")
+<Book: Book object (5)>
+>>> Book.objects.create(title="Ruby", desc= "about oh sweet Ruby")
+<Book: Book object (6)>
+
+>>> Author.objects.create(first_name="Jane", last_name="Austen")
+<Author: Author object (1)>
+>>> Author.objects.create(first_name="Emily", last_name="Dickinson")
+<Author: Author object (2)>
+>>> Author.objects.create(first_name="Fyodor", last_name="Dostoevsky")
+<Author: Author object (3)>
+>>> Author.objects.create(first_name="William", last_name="Shakesphere")
+<Author: Author object (4)>
+>>> Author.objects.create(first_name="Lau", last_name="Tzu")
+<Author: Author object (5)>
+
+
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\book_author_shell
+(djangoPy3Env) λ python manage.py makemigrations
+←[36;1mMigrations for 'writer_author_shell':←[0m
+  ←[1mwriter_author_shell\migrations\0002_author_notes.py←[0m
+    - Add field notes to author
+
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\book_author_shell
+(djangoPy3Env) λ  python manage.py migrate
+←[36;1mOperations to perform:←[0m
+←[1m  Apply all migrations: ←[0madmin, auth, contenttypes, sessions, writer_author_shell
+←[36;1mRunning migrations:←[0m
+  Applying writer_author_shell.0002_author_notes...←[32;1m OK←[0m
+
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\book_author_shell
+(djangoPy3Env) λ  python manage.py shell
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+
+
+>>> c=Book.objects.get(id=2)
+>>> c.title="C#"
+>>> c.save()
+
+
+>> c=Author.objects.get(id=4)
+>>> c.first_name="Bill"
+>>> c.save()
+
+> this_book=Book.objects.get(id=1)
+>>> this_Author=Author.objects.get(id=1)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=2)
+>>> this_Author.books.add(this_book)
+
+
+> this_book=Book.objects.get(id=1)
+>>> this_Author=Author.objects.get(id=1)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=2)
+>>> this_Author.books.add(this_book)
+>>> this_author=Author.objects.get(id=2)
+>>> this_book=Book.objects.get(id=1)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=2)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=3)
+>>> this_Author.books.add(this_book)
+
+
+
+>>> this_book=Book.objects.get(id=3)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=1)
+>>> this_author=Author.objects.get(id=3)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=2)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=3)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=4)
+>>> this_Author.books.add(this_book)
+>>>
+
+peError: int() argument must be a string, a bytes-like object or a number, not 'QuerySet'
+>>> this_book=Book.objects.get(id=1)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=2)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=3)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=4)
+>>> this_Author.books.add(this_book)
+>>> this_book=Book.objects.get(id=5)
+>>> this_Author.books.add(this_book)
+
+
+>>> this_book=Book.objects.get(id=3)
+>>> this_book.authors.all()
+<QuerySet [<Author: Author object (1)>]>
+>>>
+>>>
+
+>>> from writer_author_shell.models import *
+>>> this_book=Book.objects.get(id=3)
+>>> this_book.authors.all()
+<QuerySet [<Author: Author object (1)>]>
+>>> book3authors=this_book.authors.all()
+>>> for author in book3authors:
+...     author.first_name
+...
+'Jane'
+>>>
+
+
+>>> book3authors.delete
+<bound method QuerySet.delete of <QuerySet [<Author: Author object (1)>]>>
+>>>
+
+>>> author5=author.objects.get(id=5)
+>>> this_book = book.objects.get(id=2)
+>>> author5.books.add(this_book)
+
+
+>>> from writer_author_shell.models import *
+>>> this_author=Author.objects.get(id=3)
+>>> this_author.books.all()
+>>> this_book=this_book.authors.all()
+>>> for author in the_authors:
+...     author.first_name
+...
+
+
+>> the_book = Books.objects.all(id=5)
+>>> authors=this_book.authors.all()
+>>> for author in book3authors:
+...     author.first_name
+
+
+

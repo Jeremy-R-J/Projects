@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Author_Maker</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div>
+        <form action="author_maker.html/" method="POST">
+            {% csrf_token %}
+            <h2>List</h2>
+            <p>First Name</p>
+            <input type="text" id="first_name" name="first_name" />
+            <p>Last Name</p>
+            <input type="text" id="last_name" name="last_name" />
+            <br />
+            <p>Notes</p>
+            <br />
+            <textarea name="notes" rows="10" cols="30">Tell us about the book here?!</textarea>
+            <br/>
+            <button>Submit!</button>
+            <button>Reset!</button>
+        </form>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name of Author</th>
+                <th>action</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Hickman</td>
+                <td>link</td>
+            </tr>
+            <tr>
+                <td>Frank</td>
+                <td>Miller</td>
+                <td>link</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

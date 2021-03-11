@@ -1,0 +1,205 @@
+signments\Python\django\dojo_ninjas_proj
+(djangoPy3Env) λ python manage.py shell
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from dojos_ninjas_app.models import Dojos,Ninja
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+ModuleNotFoundError: No module named 'dojos_ninjas_app'
+>>> from dojo_ninjas_app.models import Dojos,Ninja
+>>> Dojos.objects.create(dojo_name="AMC",dojo_style="pankration")
+<Dojos: Dojos object (1)>
+>>> Dojos.objects.create(dojo_name="Gracies",dojo_style="BJJ")
+<Dojos: Dojos object (2)>
+>>> Dojos.objects.create(dojo_name="Ivans",dojo_style="Pancrase")
+<Dojos: Dojos object (3)>
+>>> c.delete()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'c' is not defined
+>>> c=Dojos.objects.get(id=1)
+>>> c.delete()
+(1, {'dojo_ninjas_app.Ninja': 0, 'dojo_ninjas_app.Dojos': 1})
+>>> c=Dojos.objects.get(id=2)
+>>> c.delete()
+(1, {'dojo_ninjas_app.Ninja': 0, 'dojo_ninjas_app.Dojos': 1})
+>>> c=Dojos.objects.get(id=3)
+>>> c.delete()
+(1, {'dojo_ninjas_app.Ninja': 0, 'dojo_ninjas_app.Dojos': 1})
+(1, {'dojo_ninjas_app.Ninja': 0, 'dojo_ninjas_app.Dojos': 1})
+>>> Dojos.objects.create(dojo_name="AMC Kirkland",dojo_style="pankration")
+<Dojos: Dojos object (4)>
+>>> Dojos.objects.create(dojo_name="Gracies Bellevue",dojo_style="BJJ")
+<Dojos: Dojos object (5)>
+>>> Dojos.objects.create(dojo_name="Ivans Seattle",dojo_style="Pancrase")
+<Dojos: Dojos object (6)>
+>>>
+>>>
+
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: dojo_ninjas_app_ninja.dojo_id
+>>> Ninja.objects.create(first_name="Jeremy", last_name="Johns", 4)
+  File "<console>", line 1
+    Ninja.objects.create(first_name="Jeremy", last_name="Johns", 4)
+                                                                  ^
+SyntaxError: positional argument follows keyword argument
+>>> my_ninja = Ninja.objects.create(first_name="Jeremy", last_name"Johns", dojos=Dojos.objects.get(id=4)
+  File "<console>", line 1
+    my_ninja = Ninja.objects.create(first_name="Jeremy", last_name"Johns", dojos=Dojos.objects.get(id=4)
+                                                                  ^
+SyntaxError: positional argument follows keyword argument
+>>> my_ninja = Ninja.objects.create(first_name="Jeremy", last_name="Johns", dojos=Dojos.objects.get(id=4)
+...
+... my_ninja = Ninja.objects.create(first_name="Jeremy", last_name"Johns", dojos=Dojos.objects.get(id=4)
+
+>>> this_dojos=Dojos.objects.get(id=4)
+>>> my_ninja = Ninja.objects.create(first_name="Jeremy", last_name="Johns", dojo=this_dojos)
+>>> this_dojos=Dojos.objects.get(id=4)
+>>> my_ninja= Ninja.objects.create(first_name="Nick", last_name="Wilson",dojo=this_dojos)
+>>> this_dojos=Dojos.objects.get(id=4)
+>>> my_ninja = Ninja.objects.create(first_name="Jeremy", last_name="stupidcomdline", dojo=this_dojos)
+>>> this_dojos=Dojos.objects.get(id=5)
+>>> my_ninja = Ninja.objects.create(first_name="baker", last_name="mayfield", dojo=this_dojos)
+>>> this_dojos=Dojos.objects.get(id=6)
+>>> my_ninja = Ninja.objects.create(first_name="joe", last_name="thomas", dojo=this_dojos)
+>>> this_dojos=Dojos.objects.get(id=5)
+>>> my_ninja = Ninja.objects.create(first_name="jarvis", last_name="landry", dojo=this_dojos)
+>>> this_dojos=Dojos.objects.get(id=5)
+>>> my_ninja = Ninja.objects.create(first_name="joe", last_name="scmho", dojo=this_dojos)
+>>> this_dojos=Dojos.objects.get(id=6)
+>>> my_ninja = Ninja.objects.create(first_name="beavis", last_name="mayfield", dojo=this_dojos)
+>>> this_dojos=Dojos.objects.get(id=6)
+>>> my_ninja = Ninja.objects.create(first_name="butthead", last_name="mayfield", dojo=this_dojos)\
+
+
+Complete Wipe, issue with naming of things in my class and foreign key broke my commands.Started over with new traits that were the ones needed for assignment and worded objects in my class to work correctly.
+>>> my_ninja = Ninja.objects.create(first_name="Jer",last_name="Johns", dojo=Dojo.objects.get(id=4))
+>>> my_ninja = Ninja.objects.create(first_name="Nick",last_name="Wilson", dojo=Dojo.objects.get(id=4))
+>>> my_ninja = Ninja.objects.create(first_name="matt",last_name="hume", dojo=Dojo.objects.get(id=4)) 
+>>> my_ninja = Ninja.objects.create(first_name="Jer",last_name="Johns", dojo=Dojo.objects.get(id=4))
+>>> my_ninja = Ninja.objects.create(first_name="Nick",last_name="Wilson", dojo=Dojo.objects.get(id=4))
+>>> my_ninja = Ninja.objects.create(first_name="matt",last_name="hume", dojo=Dojo.objects.get(id=4))
+>>> my_ninja = Ninja.objects.create(first_name="mike",last_name="wanaka", dojo=Dojo.objects.get(id=5))
+>>> my_ninja = Ninja.objects.create(first_name="ivan",last_name="salavari", dojo=Dojo.objects.get(id=5))
+>>> my_ninja = Ninja.objects.create(first_name="maurice",last_name="smith", dojo=Dojo.objects.get(id=5))
+>>> my_ninja = Ninja.objects.create(first_name="randy",last_name="coture", dojo=Dojo.objects.get(id=6))
+>>> my_ninja = Ninja.objects.create(first_name="rich",last_name="franklin", dojo=Dojo.objects.get(id=6))
+>>> my_ninja = Ninja.objects.create(first_name="holly",last_name="holm", dojo=Dojo.objects.get(id=6))
+>>>> for ninja in last_dojo_ninjas:
+...     ninja.first_name
+...
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: 'RelatedManager' object is not iterable
+>>> last_dojo_ninjas=last_dojo.ninjas.all()
+>>> for ninja in last_dojo_ninjas:
+...     ninja.first_name
+...
+'randy'
+'rich'
+'holly'
+...
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: 'RelatedManager' object is not iterable
+>>> for ninja in first_dojo_ninjas:
+...     ninja.first_name
+...
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: 'RelatedManager' object is not iterable
+>>> for ninja in first_dojo_ninjas:
+...     print(ninja)
+...
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: 'RelatedManager' object is not iterable
+>>> first_dojo.ninjas
+<django.db.models.fields.related_descriptors.create_reverse_many_to_one_manager.<locals>.RelatedManager object at 0x000002E72FCCFDC0>
+>>> first_dojo.ninjas.first_name
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'RelatedManager' object has no attribute 'first_name'
+>>> first_dojo.ninjas.all
+<bound method BaseManager.all of <django.db.models.fields.related_descriptors.create_reverse_many_to_one_manager.<locals>.RelatedManager object at 0x000002E72FCCFFA0>>
+>>> first_dojo.ninjas.all()
+<QuerySet [<Ninja: Ninja object (1)>, <Ninja: Ninja object (2)>, <Ninja: Ninja object (3)>]>
+>>> first_dojo_ninjas=first_dojo_ninjas.all()
+>>> for ninja in first_dojo_ninjas:
+...     ninja.first_name
+...
+'Jer'
+'Nick'
+'matt'
+
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-packages\django\db\models\manager.py", line 176, in __get__
+    raise AttributeError("Manager isn't accessible via %s instances" % cls.__name__)
+AttributeError: Manager isn't accessible via Ninja instances
+>>> Ninja.objects.all()
+<QuerySet [<Ninja: Ninja object (1)>, <Ninja: Ninja object (2)>, <Ninja: Ninja object (3)>, <Ninja: Ninja object (4)>, <Ninja: Ninja object (5)>, <Ninja: Ninja object (6)>, <Ninja: Ninja object (7)>, <Ninja: Ninja object (8)>, <Ninja: Ninja object (9)>]>
+>>> this_ninja=Ninja.objects.get(id=9)
+>>> for Dojo in this_ninja.get()
+  File "<console>", line 1
+    for Dojo in this_ninja.get()
+                                ^
+SyntaxError: invalid syntax
+>>> for Dojo in this_ninja.get():
+...     dojo.dojo_name
+...
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Ninja' object has no attribute 'get'
+>>> this_ninja.dojo
+<Dojo: Dojo object (6)>
+>>>C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\dojo_ninjas_proj
+(djangoPy3Env) λ python manage.py makemigrations
+You are trying to add a non-nullable field 'desc' to dojo without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> old dojo
+Invalid input: unexpected EOF while parsing (<string>, line 1)
+>>> 'old dojo'
+←[36;1mMigrations for 'dojo_ninjas_app':←[0m
+  ←[1mdojo_ninjas_app\migrations\0002_dojo_desc.py←[0m
+    - Add field desc to dojo
+
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\dojo_ninjas_proj
+(djangoPy3Env) λ  python manage.py shell
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from dojo_ninjas_app.models import*
+
+
+   return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: table dojo_ninjas_app_dojo has no column named desc
+>>> Dojo.objects.create(dojo_name="WWE", dojo_city="miami", dojo_state="FL",desc ="yeah")
+
+
+Worked after I added a space !
+

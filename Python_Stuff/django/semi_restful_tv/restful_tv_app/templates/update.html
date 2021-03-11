@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit your show 2</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Show Updater 2000</h1>
+
+        <div>
+            <p><a href="/">Go Back</a></p>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <form action="/update/{{show.id}}" method="POST">
+                {% csrf_token %}
+                <div>
+                    <p>{{show.title}}</p>
+
+                    <input type="text" id="title" name="title" />
+                </div>
+                <br>
+                <div>
+                    <p>{{show.network}}</p>
+                    <input type="text" id="network" name="network" />
+                </div>
+                <div>
+                    <p>Release Date</p>
+                    <input type="date" id="release_date" name="release_date" />
+                </div>
+                <br>
+                <div>
+                    <p>{{show.desc}}</p>
+                    <br />
+                    <textarea name="desc" rows="10" cols="30">What's this show all about?</textarea>
+                </div>
+                <button>Update!</button>
+            </form>
+            <a href="/delete/{{show.id}}">Delete This Show!</a>
+        </div>
+
+</body>
+
+</html>

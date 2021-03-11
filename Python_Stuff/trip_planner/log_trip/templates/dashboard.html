@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read All</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+
+<body>{% csrf_token %}
+    <h1>Hello {{log_id.first_name}} !!</h1>
+    <div><a href="/create">Add a new Trip</a>||<a href="/delete_session">Log Out</a></div>
+    <br>
+    <div>
+        <table>
+            <tr>
+                <th>Destination</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Plan</th>
+                <th>Ation</th>
+            </tr>
+            {% for trip in trips %}
+            <tr>
+                <td>{{trip.destination}}</td>
+                <td>{{trip.start_date}}</td>
+                <td>{{trip.end_date}}</td>
+                <td>{{trip.plan}}</td>
+                <td>
+                    <a href="/create/{{trip.id}}">Show|</a>{% if trip.user.id == request.session.user_id %}
+                    <a href="/edit_trip/{{trip.id}}">Edit|</a>
+                    <a href="/delete_trip/{{job.id}}">Delete</a> {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</body>
+
+</html>

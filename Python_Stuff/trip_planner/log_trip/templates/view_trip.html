@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}" />
+    <title>Trip Viewer</title>
+</head>
+{% csrf_token %}
+<H1>{{user.id}}'s Trip and Plans! </H1>
+<p><a href="/">Go Back</a></p>
+<p><a href="/delete_session">Log Out</a></p>
+{% csrf_token %}
+<p>Destination : {{trip.destination}}</p>
+<br>
+<p>Plan : {{trip.plan}}</p>
+<br>
+<p>Created By : {{trip.user.first_name}}</p>
+<br>
+<p>Start Date : {{trip.start_date}}</p>
+<br>
+<p>End Date : {{trip.end_date}}</p>
+<br>
+<p>Created Date : {{trip.created_at}}</p>
+
+
+<body>
+
+</body>
+
+</html>

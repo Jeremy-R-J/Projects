@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+</head>
+
+<body>
+    <H1>Author Name--</H1>
+
+    <h2>Author Id number display </h2>
+
+
+    <P>Text area that is the notes=Description of author</P>
+
+    <label for="book_name">Books</label>
+    <ol>
+        <li>bang</li>
+        <li>smash</li>
+    </ol>
+    </select>
+
+    <form action="">
+        <select name="book_name" id="book_name">
+            {% for book in books %}
+            <option value="{{book.id}}">{{book.title}}</option>
+            <button>Add</button>
+            {% endfor %}
+            <!-- <br>
+            <button>Add</button>
+            <br> -->
+    </form>
+        
+
+
+
+</body>
+
+</html>

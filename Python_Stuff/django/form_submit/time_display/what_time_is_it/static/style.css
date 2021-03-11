@@ -1,0 +1,19 @@
+h1 {
+    display: center;
+    background-color: orangered;
+    border: 5px black;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    display: center;
+    padding: 20px;
+    background-color: rgba(165, 42, 42, 0.376);
+    border: 5px black;
+    text-align: center;
+}
+
+form {
+    display: center;
+}

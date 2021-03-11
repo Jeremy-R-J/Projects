@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}" />
+    <title>Read(solo)</title>
+</head>
+{% csrf_token %}
+<H1>{{job.user.first_name}}'s Trip </H1>
+<p><a href="/">Go Back</a></p>
+<p><a href="/delete_session">Log Out</a></p>
+{% csrf_token %}
+<p>Destination : {{job.job_name}}</p>
+<br>
+<p>Plan : {{job.location}}</p>
+<br>
+<p>Created By : {{job.user.first_name}}</p>
+<br>
+<p>Start Date : {{job.start_date}}</p>
+<br>
+<p>End Date : {{job.end_date}}</p>
+<br>
+<p>Created on : {{job.created_at}}</p>
+
+<body>
+
+</body>
+
+</html>

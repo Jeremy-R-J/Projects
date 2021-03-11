@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <title>Edit your Trip</title>
+</head>
+
+<body>
+
+    <div>{% csrf_token %}
+        <h1>Welcome{{job.jobs.first_name}} to Trip Updater 2000</h1>
+
+        <div>
+            <p><a href="/">Go Back</a></p><p><a href="/delete_session">Log Out</a></p>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %} 
+            <form action="/update_job/{{edit_job.id}}" method="POST">
+                {% csrf_token %}
+                <div>
+                <p>Destination</p>
+                <input type="text" id="job_name" name="job_name" />
+                </div>
+                <br>
+                <p>Start Date</p>
+                <input type="date" id="start_date" name="start_date" />
+                <br>
+                <p>End Date</p>
+                <input type="date" id="end_date" name="end_date" />
+                </div>
+                <p>Plan</p>
+                <textarea name="location" rows="5" cols="30">What's this job all about?</textarea>
+            <button>Update!</button>
+            </form>
+        </div>
+</body>
+
+</html>

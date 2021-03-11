@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Form Ever Made</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<h1>!Best Form Ever!</h1>
+<h2>No Really, Enter Your info or else!</h2>
+
+<body>
+    <form action="/create_user" method="post">
+        {% csrf_token %}
+        <label for="First_Name">First Name</label>
+        <input type="text" id="First_Name" name="name">
+        <br>
+        <label for="last_Name">Last Name</label>
+        <input type="text" id="last_Name" name="last">
+        <br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <br>
+        <label for="comments">Write something about yourself!</label><br>
+        <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+        {% comment %} <input type="text" id="txt" name="txt"> {% endcomment %}
+        <p>
+
+            <label for="select ">Prefered poison</label>
+            <select name="Pick your poison ">   
+                <option value="java ">java</option>
+                <option value="HTML ">HTML</option>
+                <option value="C# ">C#</option>
+            </select>
+        </p>
+        <button>Submit!</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+SyntaxError: invalid syntax                                                                       
+>>> users.objects.first(first_name='Rick',last_name='Grimes')                                     
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'users' is not defined                                                            
+>>> from crazy_shell.models import *                                                              
+>>> users.objects.first(first_name='Rick',last_name='Grimes')                                     
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-p
+    return getattr(self.get_queryset(), name)(*args, **kwargs)                                    
+TypeError: first() got an unexpected keyword argument 'first_name'                                
+>>> exit                                                                                          
+Use exit() or Ctrl-Z plus Return to exit                                                          
+>>> exit()                                                                                        
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py shell                                                           
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32    
+Type "help", "copyright", "credits" or "license" for more information.                            
+(InteractiveConsole)                                                                              
+>>> from crazy_shell app.models import users                                                      
+  File "<console>", line 1                                                                        
+    from crazy_shell app.models import users                                                      
+                     ^                                                                            
+SyntaxError: invalid syntax                                                                       
+>>> from crazy_shellapp.models import users                                                       
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+ModuleNotFoundError: No module named 'crazy_shellapp'                                             
+>>> from users_shellapp.models import users                                                       
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+ModuleNotFoundError: No module named 'users_shellapp'                                             
+>>> from users_shellapp.models.Model import users                                                 
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+ModuleNotFoundError: No module named 'users_shellapp'                                             
+>>> from crazy_shell.models import users                                                          
+>>> users.objects.first(first_name='Rick',last_name='Grimes')                                     
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+  File "C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\my_enviroments\djangoPy3Env\lib\site-p
+    return getattr(self.get_queryset(), name)(*args, **kwargs)                                    
+TypeError: first() got an unexpected keyword argument 'first_name'                                
+>>> users.objects.create(first_name='Rick',last_name='Grimes')                                    
+<users: users object (1)>                                                                         
+>>> users.objects.create(first_name='Carl',last_name='Grimes')                                    
+<users: users object (2)>                                                                         
+>>> users.objects.create(first_name='Neegan',last_name='Dosentmatter')                            
+<users: users object (3)>                                                                         
+>>> users.objects.all                                                                             
+<bound method BaseManager.all of <django.db.models.manager.Manager object at 0x0000022185644E80>> 
+>>> users.objects.all()values()                                                                   
+  File "<console>", line 1                                                                        
+    users.objects.all()values()                                                                   
+                       ^                                                                          
+SyntaxError: invalid syntax                                                                       
+>>> users.objects.all()values                                                                     
+  File "<console>", line 1                                                                        
+    users.objects.all()values                                                                     
+                       ^                                                                          
+SyntaxError: invalid syntax                                                                       
+>>> users.objects.all()                                                                           
+<QuerySet [<users: users object (1)>, <users: users object (2)>, <users: users object (3)>]>      
+>>> users.objects.filter(first_name)                                                              
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'first_name' is not defined                                                       
+>>> users.objects.get(id=1,id=2,id=3)__dict__                                                     
+  File "<console>", line 1                                                                        
+    users.objects.get(id=1,id=2,id=3)__dict__                                                     
+                                     ^                                                            
+SyntaxError: invalid syntax                                                                       
+>>> users.objects.get(id=1)__dict__                                                               
+  File "<console>", line 1                                                                        
+    users.objects.get(id=1)__dict__                                                               
+                           ^                                                                      
+SyntaxError: invalid syntax                                                                       
+>>> users                                                                                         
+<class 'crazy_shell.models.users'>                                                                
+>>> users.objects.get(id=1)__dict__                                                               
+  File "<console>", line 1                                                                        
+    users.objects.get(id=1)__dict__                                                               
+                           ^                                                                      
+SyntaxError: invalid syntax                                                                       
+>>> users.objects.get(id=1,id=2,id=3)__dict__                                                     
+  File "<console>", line 1                                                                        
+    users.objects.get(id=1,id=2,id=3)__dict__                                                     
+                                     ^                                                            
+SyntaxError: invalid syntax                                                                       
+>>> users.objects.all()                                                                           
+<QuerySet [<users: users object (1)>, <users: users object (2)>, <users: users object (3)>]>      
+>>> users object.get()                                                                            
+  File "<console>", line 1                                                                        
+    users object.get()                                                                            
+          ^                                                                                       
+SyntaxError: invalid syntax                                                                       
+>>> users objects all()                                                                           
+  File "<console>", line 1                                                                        
+    users objects all()                                                                           
+          ^                                                                                       
+SyntaxError: invalid syntax                                                                       
+>>> users.objects.all(id)                                                                         
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+TypeError: all() takes 1 positional argument but 2 were given                                     
+>>> users.objects.all(id=1)                                                                       
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+TypeError: all() got an unexpected keyword argument 'id'                                          
+>>> users.objects.all(id=1)                                                                       
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+TypeError: all() got an unexpected keyword argument 'id'                                          
+>>> crazy_shell                                                                                   
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'crazy_shell' is not defined                                                      
+>>> crazy_shell.users                                                                             
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'crazy_shell' is not defined                                                      
+>>> users.objects.all()                                                                           
+<QuerySet [<users: users object (1)>, <users: users object (2)>, <users: users object (3)>]>      
+>>> users.objects.first_name(1)                                                                   
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+AttributeError: 'Manager' object has no attribute 'first_name'                                    
+>>> users.objects.first_name()                                                                    
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+AttributeError: 'Manager' object has no attribute 'first_name'                                    
+>>> users.objects.first()                                                                         
+<users: users object (1)>                                                                         
+>>> exit()\                                                                                       
+... exit()                                                                                        
+  File "<console>", line 2                                                                        
+    exit()\                                                                                       
+exit()                                                                                            
+    ^                                                                                             
+SyntaxError: invalid syntax                                                                       
+>>> exit                                                                                          
+Use exit() or Ctrl-Z plus Return to exit                                                          
+>>> exit()                                                                                        
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ from django.db import models                                                     
+'from' is not recognized as an internal or external command,                                      
+operable program or batch file.                                                                   
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py makemigraations                                                 
+Unknown command: 'makemigraations'. Did you mean makemigrations?                                  
+Type 'manage.py help' for usage.                                                                  
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py migrate                                                         
+←[36;1mOperations to perform:←[0m                                                                 
+←[1m  Apply all migrations: ←[0madmin, auth, contenttypes, crazy_shell, sessions                  
+←[36;1mRunning migrations:←[0m                                                                    
+  No migrations to apply.                                                                         
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.pyshell                                                            
+C:\Users\Owner\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8
+le or directory                                                                                   
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.pyshell                                                            
+C:\Users\Owner\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8
+le or directory                                                                                   
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py shell                                                           
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32    
+Type "help", "copyright", "credits" or "license" for more information.                            
+(InteractiveConsole)                                                                              
+>>> users.objects.first_name()                                                                    
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'users' is not defined                                                            
+>>> users.objects.all()                                                                           
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'users' is not defined                                                            
+>>> users.objects.all(id=1)                                                                       
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'users' is not defined                                                            
+>>> users.objects.get(id=1,id=2,id=3)__dict__                                                     
+  File "<console>", line 1                                                                        
+    users.objects.get(id=1,id=2,id=3)__dict__                                                     
+                                     ^                                                            
+SyntaxError: invalid syntax                                                                       
+>>> users.objects.get(id=1)__dict__                                                               
+  File "<console>", line 1                                                                        
+    users.objects.get(id=1)__dict__                                                               
+                           ^                                                                      
+SyntaxError: invalid syntax                                                                       
+>>> users.objects.get()__dict__                                                                   
+  File "<console>", line 1                                                                        
+    users.objects.get()__dict__                                                                   
+                       ^                                                                          
+SyntaxError: invalid syntax                                                                       
+>>> users.object.get()__dict__                                                                    
+  File "<console>", line 1                                                                        
+    users.object.get()__dict__                                                                    
+                      ^                                                                           
+SyntaxError: invalid syntax                                                                       
+>>> users.object.get(id=1)__dict__                                                                
+  File "<console>", line 1                                                                        
+    users.object.get(id=1)__dict__                                                                
+                          ^                                                                       
+SyntaxError: invalid syntax                                                                       
+>>> exit()                                                                                        
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.pyshell                                                            
+C:\Users\Owner\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8
+le or directory                                                                                   
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.pyshell                                                            
+C:\Users\Owner\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8
+le or directory                                                                                   
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py shell                                                           
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32    
+Type "help", "copyright", "credits" or "license" for more information.                            
+(InteractiveConsole)                                                                              
+>>> users.objects.get()__dict__                                                                   
+  File "<console>", line 1                                                                        
+    users.objects.get()__dict__                                                                   
+                       ^                                                                          
+SyntaxError: invalid syntax                                                                       
+>>> users.objects.all()                                                                           
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'users' is not defined                                                            
+>>> exit()                                                                                        
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py makemigrations                                                  
+No changes detected                                                                               
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py migrate                                                         
+←[36;1mOperations to perform:←[0m                                                                 
+←[1m  Apply all migrations: ←[0madmin, auth, contenttypes, crazy_shell, sessions                  
+←[36;1mRunning migrations:←[0m                                                                    
+  No migrations to apply.                                                                         
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py shell                                                           
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32    
+Type "help", "copyright", "credits" or "license" for more information.                            
+(InteractiveConsole)                                                                              
+>>> users.objects.all()                                                                           
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'users' is not defined                                                            
+>>> exit()                                                                                        
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py makemigrations                                                  
+No changes detected                                                                               
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py migrate                                                         
+←[36;1mOperations to perform:←[0m                                                                 
+←[1m  Apply all migrations: ←[0madmin, auth, contenttypes, crazy_shell, sessions                  
+←[36;1mRunning migrations:←[0m                                                                    
+  No migrations to apply.                                                                         
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py shell                                                           
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32    
+Type "help", "copyright", "credits" or "license" for more information.                            
+(InteractiveConsole)                                                                              
+>>> users.objects.all()                                                                           
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'users' is not defined                                                            
+>>> users.objects.all()                                                                           
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'users' is not defined                                                            
+>>> exit()                                                                                        
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py migrate                                                         
+←[36;1mOperations to perform:←[0m                                                                 
+←[1m  Apply all migrations: ←[0madmin, auth, contenttypes, crazy_shell, sessions                  
+←[36;1mRunning migrations:←[0m                                                                    
+  No migrations to apply.                                                                         
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py shell                                                           
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32    
+Type "help", "copyright", "credits" or "license" for more information.                            
+(InteractiveConsole)                                                                              
+>>> users.objects.all()                                                                           
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'users' is not defined                                                            
+>>>                                                                                               
+>>> exit()                                                                                        
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py makemigrations                                                  
+←[36;1mMigrations for 'crazy_shell':←[0m                                                          
+  ←[1mcrazy_shell\migrations\0004_auto_20210112_2141.py←[0m                                       
+    - Alter field first_name on users                                                             
+    - Alter field last_name on users                                                              
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py migrate                                                         
+←[36;1mOperations to perform:←[0m                                                                 
+←[1m  Apply all migrations: ←[0madmin, auth, contenttypes, crazy_shell, sessions                  
+←[36;1mRunning migrations:←[0m                                                                    
+  Applying crazy_shell.0004_auto_20210112_2141...←[32;1m OK←[0m                                   
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py shell                                                           
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32    
+Type "help", "copyright", "credits" or "license" for more information.                            
+(InteractiveConsole)                                                                              
+>>> users.objects.all()                                                                           
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'users' is not defined                                                            
+>>> exit()                                                                                        
+                                                                                                  
+C:\Users\Owner\Desktop\DOJO\Dojo_Assignments\Python\django\users_shell                            
+(djangoPy3Env) λ python manage.py shell                                                           
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32    
+Type "help", "copyright", "credits" or "license" for more information.                            
+(InteractiveConsole)                                                                              
+>>> from crazy_shell.models import users                                                          
+>>> users.objects.all()                                                                           
+<QuerySet [<user : Rick Grimes>, <user : Carl Grimes>, <user : Neegan Dosentmatter>]>             
+>>> crazy_shell.objects.first()                                                                   
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'crazy_shell' is not defined                                                      
+>>> users.objects.first()                                                                         
+<user : Rick Grimes>                                                                              
+>>> last.objects.first()                                                                          
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+NameError: name 'last' is not defined                                                             
+>>> users.objects.last()                                                                          
+<user : Neegan Dosentmatter>                                                                      
+>>> c=users.object.get(id=3)                                                                      
+Traceback (most recent call last):                                                                
+  File "<console>", line 1, in <module>                                                           
+AttributeError: type object 'users' has no attribute 'object'                                     
+>>> c=users.object.get(id=3) c.last_name="pancakes" c.save                                        
+  File "<console>", line 1                                                                        
+    c=users.object.get(id=3) c.last_name="pancakes" c.save                                        
+                             ^                                                                    
+SyntaxError: invalid syntax                                                                       
+>>> c = users.objects.get(id=3)                                                                   
+>>> c.last_name="pancakes"                                                                        
+>>> c.save                                                                                        
+<bound method Model.save of <user : Neegan pancakes>>                                             
+>>> c = users.objects.get(id=2)                                                                   
+>>> c.delete                                                                                      
+<bound method Model.delete of <user : Carl Grimes>>                                               
+>>> users.objects.all().order_by("first_name")                                                    
+<QuerySet [<user : Carl Grimes>, <user : Neegan Dosentmatter>, <user : Rick Grimes>]>             

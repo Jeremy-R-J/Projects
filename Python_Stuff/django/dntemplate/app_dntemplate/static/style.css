@@ -1,0 +1,29 @@
+form {
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 40%;
+    margin: 20px;
+}
+
+ul {
+    text-align: center;
+    display: inline;
+    list-style-type: upper-roman;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 15px;
+}
+
+li {
+    text-align: center;
+    list-style-type: upper-roman;
+}
+
+.maybe {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}

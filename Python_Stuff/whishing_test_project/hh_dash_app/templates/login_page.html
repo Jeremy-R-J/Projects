@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}" />
+</head>
+
+<body>
+    <h1>Welcome! Sign in to manage your Tripping!</h1>
+    <div>
+        <div class="registration_form">
+            <h2>Registration</h2>
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+                    {{ message }}
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            <form action="/register_user" method="POST">
+                {% csrf_token %}
+                <div>
+                    <p>First Name</p>
+                    <input type="text" id="first_name" name="first_name" />
+                </div>
+                <br />
+                <div>
+                    <p>Last Name</p>
+                    <input type="text" id="last_name" name="last_name" />
+                </div>
+                <br />
+                <div>
+                    <p>Email</p>
+                    <input type="email" id="email" name="email" />
+                </div>
+                <br />
+                <div>
+                    <p>Password</p>
+                    <input type="password" id="password" name="password" /><br />
+                </div>
+                <br />
+                <div>
+                    <p>Confirm Password</p>
+                    <input type="password" id="con_password" name="con_password" /> <br>
+                </div>
+                <br />
+                <input type="submit" value="Register!" />
+            </form>
+        </div>
+        <div class="login_form">
+            <h2>Login</h2>
+            <form action="/login_user" method="POST">
+                {% csrf_token %}
+                <div>
+                    <p>Email</p>
+                    <input type="email" id="email" name="email" />
+                </div>
+                <br />
+                <div>
+                    <p>Password</p>
+                    <input type="password" id="password" name="password" /><br />
+                </div>
+                <br />
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

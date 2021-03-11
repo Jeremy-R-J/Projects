@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read All</title>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+
+<body>{% csrf_token %}
+    <h1>Hello {{log_id.first_name}} Let's get started on your Trips!! </h1>
+    <div><a href="/new_job">Add a new Trip</a>||<a href="/delete_session">Log Out</a></div>
+    <br>
+    <div>
+        <table>
+            <tr>
+                <th>Destination</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>plan</th>
+                <th>Actions</th>
+            </tr>
+            {% for job in jobs %}
+            <tr>
+                <td><a href="/read_page/{{job.id}}">{{job.job_name}}</a></td>
+                <td>{{job.start_date}}</td>
+                <td>{{job.end_date}}</td>
+                <td>{{job.location}}</td>
+                <td>
+                    {% if job.user.id == request.session.user_id %}
+                    <a href="/edit_job/{{job.id}}">Edit|</a>
+                    <a href="/delete_job/{{job.id}}">Delete</a> {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</body>
+
+</html>
