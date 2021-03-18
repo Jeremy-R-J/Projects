@@ -1,0 +1,36 @@
+Pseudo Code Python Day 4
+
+1.Create a Funciton that accepts an array.
+
+2.Create a for loop that loops through the entirety of the array.
+
+3.Create a counter.
+
+4.Have counter add together value of array.
+
+5.Divide counter by the lenth of the array.
+
+6.Return outcome of counter divided by array.
+
+7.Print funciton to Console. 
+
+
+
+#create a function and take in an array
+#for loop going through the whole array
+#multiply the element by itself
+#replace the element with the new value
+#after the loop, return the same arr
+
+From Devin Tyler to Everyone:  09:58 AM
+arr = [1, 2, 3, 4, 5];
+
+
+
+function xyz(arr) {
+    for (i = 0; i < arr.length; i++) {
+        arr[i] = arr[i] * arr[i];
+    }
+    return arr;
+}
+console.log(xyz(arr));
