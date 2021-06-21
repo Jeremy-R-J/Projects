@@ -8,12 +8,13 @@ const SearchForm = () => {
       className="search-form"
       onSubmit={(e) => e.preventDefault()}
     >
-      <h2>Search Movies</h2>
+      <h2>Find Your Movies in the search bar!</h2>
       <input
         type="text"
         className="form-input"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        placeholder="Type Here"
       />
       {error.show && <div className="error">{error.msg}</div>}
     </form>
