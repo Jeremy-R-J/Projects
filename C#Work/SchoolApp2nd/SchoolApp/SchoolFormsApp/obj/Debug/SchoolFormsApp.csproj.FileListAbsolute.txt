@@ -1,0 +1,13 @@
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\obj\Debug\SchoolFormsApp.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\obj\Debug\SchoolFormsApp.Form1.resources
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\obj\Debug\SchoolFormsApp.Properties.Resources.resources
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\obj\Debug\SchoolFormsApp.csproj.GenerateResource.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\obj\Debug\SchoolFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\bin\Debug\SchoolFormsApp.exe.config
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\bin\Debug\SchoolFormsApp.exe
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\bin\Debug\SchoolFormsApp.pdb
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\bin\Debug\SchoolLibrary.dll
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\bin\Debug\SchoolLibrary.pdb
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\obj\Debug\SchoolFormsApp.csproj.CopyComplete
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\obj\Debug\SchoolFormsApp.exe
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp2nd\SchoolApp\SchoolFormsApp\obj\Debug\SchoolFormsApp.pdb

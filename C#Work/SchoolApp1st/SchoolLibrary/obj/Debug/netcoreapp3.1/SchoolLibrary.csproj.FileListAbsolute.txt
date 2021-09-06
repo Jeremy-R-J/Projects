@@ -1,0 +1,10 @@
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp\SchoolLibrary\bin\Debug\netcoreapp3.1\SchoolLibrary.deps.json
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp\SchoolLibrary\bin\Debug\netcoreapp3.1\SchoolLibrary.dll
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp\SchoolLibrary\bin\Debug\netcoreapp3.1\SchoolLibrary.pdb
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp\SchoolLibrary\obj\Debug\netcoreapp3.1\SchoolLibrary.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp\SchoolLibrary\obj\Debug\netcoreapp3.1\SchoolLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp\SchoolLibrary\obj\Debug\netcoreapp3.1\SchoolLibrary.AssemblyInfoInputs.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp\SchoolLibrary\obj\Debug\netcoreapp3.1\SchoolLibrary.AssemblyInfo.cs
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp\SchoolLibrary\obj\Debug\netcoreapp3.1\SchoolLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp\SchoolLibrary\obj\Debug\netcoreapp3.1\SchoolLibrary.dll
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\SchoolApp\SchoolLibrary\obj\Debug\netcoreapp3.1\SchoolLibrary.pdb
