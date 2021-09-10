@@ -1,0 +1,6 @@
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\WeatherPond\Begin\WeatherData\bin\Debug\WeatherData.dll
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\WeatherPond\Begin\WeatherData\bin\Debug\WeatherData.pdb
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\WeatherPond\Begin\WeatherData\obj\Debug\WeatherData.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\WeatherPond\Begin\WeatherData\obj\Debug\WeatherData.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\WeatherPond\Begin\WeatherData\obj\Debug\WeatherData.dll
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\WeatherPond\Begin\WeatherData\obj\Debug\WeatherData.pdb
