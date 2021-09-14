@@ -1,0 +1,7 @@
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LocationProgram\WhereAmI\bin\Debug\WhereAmI.exe.config
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LocationProgram\WhereAmI\bin\Debug\WhereAmI.exe
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LocationProgram\WhereAmI\bin\Debug\WhereAmI.pdb
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LocationProgram\WhereAmI\obj\Debug\WhereAmI.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LocationProgram\WhereAmI\obj\Debug\WhereAmI.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LocationProgram\WhereAmI\obj\Debug\WhereAmI.exe
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LocationProgram\WhereAmI\obj\Debug\WhereAmI.pdb
