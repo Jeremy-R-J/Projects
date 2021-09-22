@@ -1,0 +1,13 @@
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\obj\Debug\netcoreapp2.1\FaceDetect.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\obj\Debug\netcoreapp2.1\FaceDetect.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\obj\Debug\netcoreapp2.1\FaceDetect.AssemblyInfoInputs.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\obj\Debug\netcoreapp2.1\FaceDetect.AssemblyInfo.cs
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\obj\Debug\netcoreapp2.1\FaceDetect.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\bin\Debug\netcoreapp2.1\FaceDetect.deps.json
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\bin\Debug\netcoreapp2.1\FaceDetect.runtimeconfig.json
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\bin\Debug\netcoreapp2.1\FaceDetect.runtimeconfig.dev.json
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\bin\Debug\netcoreapp2.1\FaceDetect.dll
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\bin\Debug\netcoreapp2.1\FaceDetect.pdb
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\obj\Debug\netcoreapp2.1\FaceDetect.dll
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\obj\Debug\netcoreapp2.1\FaceDetect.pdb
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\FaceAPIwork\FaceDetect\obj\Debug\netcoreapp2.1\FaceDetect.genruntimeconfig.cache

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FaceDetect": {
+      "commandName": "Project",
+      "commandLineArgs": "f1579d048c384f33900bcf329d1b1d60\"C:\\Users\\Owner\\Desktop\\Wedding-Older\\STP60478\""
+    }
+  }
+}
