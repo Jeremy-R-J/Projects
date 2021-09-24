@@ -1,0 +1,5 @@
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Dashboard\obj\Debug\Dashboard.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Dashboard\obj\Debug\MainWindow.g.cs
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Dashboard\obj\Debug\App.g.cs
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Dashboard\obj\Debug\Dashboard_MarkupCompile.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Dashboard\obj\Debug\Dashboard_MarkupCompile.lref

@@ -1,0 +1,6 @@
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Data\bin\Debug\Data.dll
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Data\bin\Debug\Data.pdb
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Data\obj\Debug\Data.dll
+C:\Users\Owner\Desktop\DOJO\Git_Hub_Repo\C#Work\LiveDashboardApp\CodeClinic\Data\obj\Debug\Data.pdb
