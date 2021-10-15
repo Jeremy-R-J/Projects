@@ -24,13 +24,14 @@ namespace Stack
             }
         }
     }
-        public class stack
+
+    public class stack
         {
             private int maxSize;
             private string[] stackArray;
             private int top;
             
-        public stack (int size)
+     public stack (int size)
 	    {
                 maxSize = size;
                 stackArray = new string[maxSize];
@@ -60,14 +61,14 @@ namespace Stack
                 }
 
         public bool isFull()
-        {
-        return (maxSize -1 == top);
-        }
+            {
+            return (maxSize -1 == top);
+            }
 
         public bool isEmpty()
-        {
-        return (top == -1);
-        }
+            {
+            return (top == -1);
+            }
 
     }
 }
